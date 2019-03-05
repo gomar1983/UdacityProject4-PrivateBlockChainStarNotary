@@ -13,7 +13,7 @@ Node and NPM
 ### Configuring the project
 
 - Use NPM to install all required packages
-```
+
 "bitcoinjs-lib": "^4.0.3",
 "bitcoinjs-message": "^2.0.0",
 "body-parser": "^1.18.3",
@@ -23,19 +23,21 @@ Node and NPM
 "hex2ascii": "0.0.3",
 "init": "^0.1.2",
 "level": "^4.0.0"
-```
+
 - Run the express app
-```
+
 node app.js
-```
+
 
 
 
 ### Testing the endpoints
-Post block http://localhost:8000/requestValidation
+
+- Post block http://localhost:8000/requestValidation
+
 body : {"address":"1GCUCBd2CAVJzvjU2GDVZrWSkLaa9hL6cR"}
 
-RESPONSE
+- RESPONSE
 
 {
     "walletAddress": "1GCUCBd2CAVJzvjU2GDVZrWSkLaa9hL6cR",
@@ -43,9 +45,9 @@ RESPONSE
     "message": "1GCUCBd2CAVJzvjU2GDVZrWSkLaa9hL6cR:1551761539:starRegistry",
     "validationWindow": 300
 }
-================================================================================
 
-POST block http://localhost:8000/message-signature/validate
+- POST block http://localhost:8000/message-signature/validate
+
 body :
 {
 	"address":"1GCUCBd2CAVJzvjU2GDVZrWSkLaa9hL6cR",
